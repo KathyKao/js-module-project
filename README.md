@@ -1,4 +1,4 @@
-# JS 模組化搭配 Vite 打包工具及ESLint程式碼規範
+# JS 模組化搭配 Vite 打包工具及 ESLint Preiiter 程式碼設定
 
 1. vite : 是一個現代化大包工具，透過指令建立 vite 專案，vite 必須在 node 18 以上環境執行
 - 指令建立 vite 專案
