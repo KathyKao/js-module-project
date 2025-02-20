@@ -2,6 +2,7 @@ import '../css/style.css';
 import javascriptLogo from '../../public/javascript.svg';
 import viteLogo from '../../public/vite.svg';
 import { setupCounter } from './counter.js';
+import { printMessage } from '../common/printMessage.js';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -22,4 +23,5 @@ document.querySelector('#app').innerHTML = `
 `;
 
 setupCounter(document.querySelector('#counter'));
-const a = 1;
+printMessage('Hello');
+// const a = 1;

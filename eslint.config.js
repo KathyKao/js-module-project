@@ -8,12 +8,15 @@ export default [
   pluginJs.configs.recommended,
   eslintConfigPrettier,
   {
+    // 在 Flat Config ignores 是一個特殊的配置，需要在一個獨立的物件中定義，當 ignores 與其他配置混合在一起時，ESLint 可能無法正確處理檔案忽略邏輯
+    ignores: ['public', 'dist', 'node_modules', 'src/common'],
+  },
+  {
     languageOptions: { globals: globals.browser },
     plugins: {
-      js: pluginJs,
+      js: pluginJs, // 不加這個也可以
       prettier: eslintPluginPrettier,
     },
-    ignores: ['public', 'dist', 'node_modules'],
     rules: {
       'no-console': 'off',
       'no-promise-executor-return': 'off',
